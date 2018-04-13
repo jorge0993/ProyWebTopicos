@@ -17,7 +17,7 @@ Namespace Controllers
             objUsuario.fecha_alta = Convert.ToDateTime(Request.Form("fecha_alta"))
             objUsuario.tipo_usuario = Convert.ToInt16(Request.Form("tipo_usuario"))
 
-            Return View()
+            Return View(objUsuario)
         End Function
         Function Index() As ActionResult
             Return View()

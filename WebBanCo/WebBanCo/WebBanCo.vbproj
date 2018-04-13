@@ -199,6 +199,10 @@
     <Content Include="packages.config" />
     <Content Include="Views\Usuario\Usuario.vbhtml" />
     <Content Include="Views\Usuario\Index.vbhtml" />
+    <Content Include="Views\Login\LoginTarjeta.vbhtml" />
+    <Content Include="Views\Login\LoginPIN.vbhtml" />
+    <Content Include="Views\MenuPrincipal\Menu.vbhtml" />
+    <Content Include="Views\Retiros\Retiros.vbhtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

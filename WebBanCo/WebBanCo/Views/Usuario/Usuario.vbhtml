@@ -18,12 +18,12 @@ End Code
         
         <h3>Datos del usuario:</h3><br />
         <form>
-            <label>Numero de tarjeta: @Model.numero_tarjeta</label>
-            <label>Nombres: @Model.nombres</label>
-            <label>Apellidos: @Model.apellidos</label>
-            <label>Direccion: @Model.direccion</label>
-            <label>Saldo: @Model.saldo</label>
-            <label>Fecha de alta: @Model.fecha_alta</label>
+            <label>Numero de tarjeta: @Model.numero_tarjeta</label><br />
+            <label>Nombres: @Model.nombres</label><br />
+            <label>Apellidos: @Model.apellidos</label><br />
+            <label>Direccion: @Model.direccion</label><br />
+            <label>Saldo: @Model.saldo</label><br />
+            <label>Fecha de alta: @Model.fecha_alta</label><br />
             <button type="button">Guardar</button>
         </form>
     </div>
