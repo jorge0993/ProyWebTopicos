@@ -7,4 +7,5 @@
     Public Property direccion As String
     Public Property fecha_alta As Date
     Public Property tipo_usuario As Integer
+
 End Class
