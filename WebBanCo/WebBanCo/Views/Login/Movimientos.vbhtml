@@ -15,16 +15,13 @@ End Code
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width" />
-    <title>LoginPIN</title>
+    <title>Movimientos</title>
 </head>
-<body class="container-fluid" style="text-align:center">
-    <form action="@Url.Action("Menu", "Login")" method="post">
-        <img src="" alt="" name="logo1"><br /><br />
-        <h3>PIN:</h3>
-        <input type="password" name="txtNIP" required><br />
-        <button type="submit" name="btnEntrar">Entrar</button>
-    </form>
+<body class="container-fluid">
+    <div> 
+    </div>
     <div class="fixed-bottom">
+        <a class="pull-right" href="@Url.Action("Menu", "Login")"><button name="btnSalir">Regresar</button></a>
         <a class="pull-right" href="@Url.Action("Index", "Login")"><button name="btnSalir">Salir</button></a>
     </div>
 </body>

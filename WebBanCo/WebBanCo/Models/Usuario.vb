@@ -1,6 +1,6 @@
 ﻿Public Class Usuario
     Public Property numero_tarjeta As String
-    Public Property pin As Integer
+    Public Property pin As String
     Public Property saldo As Double
     Public Property nombres As String
     Public Property apellidos As String

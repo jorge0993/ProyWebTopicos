@@ -149,10 +149,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.vb" />
-    <Compile Include="Controllers\UsuarioController.vb" />
+    <Compile Include="Controllers\LoginController.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Movimiento.vb" />
     <Compile Include="Models\Usuario.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -197,12 +198,16 @@
     </None>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
-    <Content Include="Views\Usuario\Usuario.vbhtml" />
-    <Content Include="Views\Usuario\Index.vbhtml" />
-    <Content Include="Views\Login\LoginTarjeta.vbhtml" />
     <Content Include="Views\Login\LoginPIN.vbhtml" />
-    <Content Include="Views\MenuPrincipal\Menu.vbhtml" />
-    <Content Include="Views\Retiros\Retiros.vbhtml" />
+    <Content Include="Views\Login\Index.vbhtml" />
+    <Content Include="Views\Login\Usuario.vbhtml" />
+    <Content Include="Views\Login\Usuario_Nuevo.vbhtml" />
+    <Content Include="Views\Login\Menu.vbhtml" />
+    <Content Include="Views\Login\Retiros.vbhtml" />
+    <Content Include="Views\Login\Movimientos.vbhtml" />
+    <Content Include="Views\Login\Pagos.vbhtml" />
+    <Content Include="Views\Login\CambiarNIP.vbhtml" />
+    <Content Include="Views\Login\Saldo.vbhtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
