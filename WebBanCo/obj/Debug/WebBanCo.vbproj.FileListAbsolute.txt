@@ -1,0 +1,200 @@
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\ApplicationInsights.config
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\roslyn\csc.exe
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\roslyn\System.Collections.Immutable.dll
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\roslyn\vbc.exe
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\roslyn\VBCSCompiler.exe
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\roslyn\VBCSCompiler.exe.config
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\WebBanCo.dll.config
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\WebBanCo.dll
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\WebBanCo.pdb
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\WebBanCo.xml
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\Microsoft.AI.Web.dll
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\Microsoft.AI.WindowsServer.dll
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\Microsoft.ApplicationInsights.dll
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\Microsoft.Web.Infrastructure.dll
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\System.Web.Helpers.dll
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\System.Web.Mvc.dll
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\System.Web.Razor.dll
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\System.Web.Webpages.Deployment.dll
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\System.Web.Webpages.dll
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\System.Web.Webpages.Razor.dll
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\Microsoft.AI.Web.xml
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\Microsoft.AI.WindowsServer.xml
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\Microsoft.ApplicationInsights.xml
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\System.Web.Razor.xml
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\System.Web.Webpages.xml
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\System.Web.Webpages.Deployment.xml
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\System.Web.Webpages.Razor.xml
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\System.Web.Helpers.xml
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\bin\System.Web.Mvc.xml
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\obj\Debug\WebBanCo.vbprojResolveAssemblyReference.cache
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\obj\Debug\WebBanCo.Resources.resources
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\obj\Debug\WebBanCo.vbproj.GenerateResource.Cache
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\obj\Debug\WebBanCo.dll
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\obj\Debug\WebBanCo.xml
+c:\users\jorge\documents\visual studio 2015\Projects\WebBanCo\WebBanCo\obj\Debug\WebBanCo.pdb
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\ApplicationInsights.config
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\csc.exe
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\vbc.exe
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\VBCSCompiler.exe
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\WebBanCo.dll.config
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\WebBanCo.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\WebBanCo.pdb
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\WebBanCo.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.Web.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.ApplicationInsights.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Helpers.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Mvc.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Razor.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Webpages.Deployment.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Webpages.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Webpages.Razor.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.Web.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.ApplicationInsights.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Razor.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Webpages.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Webpages.Deployment.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Webpages.Razor.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Helpers.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Mvc.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\obj\Debug\WebBanCo.vbprojResolveAssemblyReference.cache
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\obj\Debug\WebBanCo.Resources.resources
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\obj\Debug\WebBanCo.vbproj.GenerateResource.Cache
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\obj\Debug\WebBanCo.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\obj\Debug\WebBanCo.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\WebBanCo\WebBanCo\obj\Debug\WebBanCo.pdb
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\ApplicationInsights.config
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\csc.exe
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\vbc.exe
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\VBCSCompiler.exe
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\WebBanCo.dll.config
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\WebBanCo.dll
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\WebBanCo.pdb
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\WebBanCo.xml
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.Web.dll
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.ApplicationInsights.dll
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Helpers.dll
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Mvc.dll
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Razor.dll
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Webpages.Deployment.dll
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Webpages.dll
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Webpages.Razor.dll
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.Web.xml
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.ApplicationInsights.xml
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Razor.xml
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Webpages.xml
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Webpages.Deployment.xml
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Webpages.Razor.xml
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Helpers.xml
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Mvc.xml
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\obj\Debug\WebBanCo.vbprojResolveAssemblyReference.cache
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\obj\Debug\WebBanCo.Resources.resources
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\obj\Debug\WebBanCo.vbproj.GenerateResource.Cache
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\obj\Debug\WebBanCo.dll
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\obj\Debug\WebBanCo.xml
+C:\Users\jorge\Desktop\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\obj\Debug\WebBanCo.pdb
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\ApplicationInsights.config
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\csc.exe
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\vbc.exe
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\VBCSCompiler.exe
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\WebBanCo.dll.config
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\WebBanCo.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\WebBanCo.pdb
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\WebBanCo.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.Web.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.ApplicationInsights.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Helpers.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Mvc.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Razor.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Webpages.Deployment.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Webpages.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Webpages.Razor.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.Web.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.ApplicationInsights.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Razor.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Webpages.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Webpages.Deployment.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Webpages.Razor.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Helpers.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\bin\System.Web.Mvc.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\obj\Debug\WebBanCo.vbprojResolveAssemblyReference.cache
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\obj\Debug\WebBanCo.Resources.resources
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\obj\Debug\WebBanCo.vbproj.GenerateResource.Cache
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\obj\Debug\WebBanCo.dll
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\obj\Debug\WebBanCo.xml
+C:\Users\luanmega\Desktop\proyectoweb\ProyWebTopicos\ProyWebTopicos\WebBanCo\WebBanCo\obj\Debug\WebBanCo.pdb
