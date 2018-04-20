@@ -1,5 +1,4 @@
-﻿
-@Code
+﻿@Code
     Layout = Nothing
 End Code
 
@@ -27,8 +26,8 @@ End Code
         <button name="btnOtraCantidad">Otra Cantidad</button>
     </form>
     <div class="fixed-bottom ">
-        <a class="pull-right" href="@Url.Action("Menu", "Login")"><button name="btnSalir">Regresar</button></a>
         <a class="pull-right" href="@Url.Action("Index", "Login")"><button name="btnSalir">Salir</button></a>
+        <a class="pull-right" href="@Url.Action("Menu", "Login")"><button name="btnSalir">Regresar</button></a>
     </div>
 </body>
 </html>
