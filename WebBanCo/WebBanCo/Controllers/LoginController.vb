@@ -24,17 +24,22 @@ Namespace Controllers
         End Function
         Function Usuario() As ActionResult
             If System.Configuration.ConfigurationManager.AppSettings("sesion") Then
+
                 Dim objUsuario As New Usuario()
                 objUsuario.numero_tarjeta = Convert.ToString(Request.Form("numero_tarjeta"))
                 objUsuario.pin = Convert.ToString(Request.Form("pin"))
                 objUsuario.nombres = Convert.ToString(Request.Form("nombres"))
                 objUsuario.apellidos = Convert.ToString(Request.Form("apellidos"))
                 objUsuario.direccion = Convert.ToString(Request.Form("direccion"))
-                objUsuario.saldo = Convert.ToDouble(Request.Form("saldo"))
+                objUsuario.saldo = 0.0
                 objUsuario.fecha_alta = Convert.ToDateTime(Request.Form("fecha_alta"))
                 objUsuario.tipo_usuario = Convert.ToInt16(Request.Form("tipo_usuario"))
+                If con.agregarUsuario(objUsuario.numero_tarjeta, objUsuario.pin, objUsuario.nombres, objUsuario.apellidos, objUsuario.direccion, objUsuario.fecha_alta, objUsuario.tipo_usuario) Then
+                    Return View(objUsuario)
+                Else
+                    Return View("Usuario_Nuevo")
+                End If
 
-                Return View(objUsuario)
             Else
                 Return View("Index")
             End If
@@ -52,7 +57,7 @@ Namespace Controllers
         Function Menu() As ActionResult
             Dim tipo As String, flag As Boolean = False
             tipo = System.Configuration.ConfigurationManager.AppSettings("tipo_usuario").ToString()
-            If System.Configuration.ConfigurationManager.AppSettings("tipo_usuario").ToString() IsNot "-1" Then
+            If Not Convert.ToBoolean(System.Configuration.ConfigurationManager.AppSettings("sesion")) Then
                 If con.ValidarPIN(Convert.ToString(Request.Form("txtNIP"))) Then
                     System.Configuration.ConfigurationManager.AppSettings("sesion") = True
                     If tipo Is "1" Then
@@ -101,7 +106,10 @@ Namespace Controllers
             End If
         End Function
         Function Saldo() As ActionResult
-            If System.Configuration.ConfigurationManager.AppSettings("sesion") Then
+            If Convert.ToBoolean(System.Configuration.ConfigurationManager.AppSettings("sesion")) Then
+                Dim monto As Double
+                monto = Convert.ToDouble(con.ConsultarSaldo())
+                ViewData("monto") = monto
                 Return View()
             Else
                 Return View("Index")

@@ -25,55 +25,29 @@ End Code
 </head>
 
 <body class="container-fluid">
-    <div class="container-fluid" style="text-align:center">
-        <div class="row rowMargin mh1">
+    <diV style="text-align:center;margin-left:100px; margin-top:100px">
+        <img src="\Imagenes\bancp1.png" width="200" height="200" />
 
+        <div style="margin-top:50px">
 
-            <div class="col-sm-4 ">
+           
                 <a href="@Url.Action("Saldo", "Login")"><button name="btnSaldo" class="btn btn-outline-primary btn-lg">Saldo</button></a><br />
-            </div>
-            <div class="col-sm-4 ">
-
-            </div>
-            <div class="h-25 col-sm-4 ">
                 <a href="@Url.Action("Retiros", "Login")"><button name="btnRetiro" class="btn btn-outline-primary btn-lg">Retiro</button></a><br />
-            </div>
-
-        </div>
-        <div class="row rowMargin mh1">
-            <div class="col-sm-3">
                 <a href="@Url.Action("Movimientos", "Login")"><button name="btnMovimientos" class="btn btn-outline-primary btn-lg">Movimientos</button></a><br />
-            </div>
-                <div class="col-sm-6">
-                    <img src="\Imagenes\bancp1.png" width="100" height="100" />
-                </div>
-                <div class="col-sm-3 offset-md-3">
-                    <a href="@Url.Action("Pagos", "Login")"><button name="btnPagos" class="btn btn-outline-primary btn-lg">Pagos</button></a><br />
-                </div>
-            </div>
-        <div class="row rowMargin mh1">
-            <div class="col-sm-4 ">
+                <a href="@Url.Action("Pagos", "Login")"><button name="btnPagos" class="btn btn-outline-primary btn-lg">Pagos</button></a><br />
                 <a href="@Url.Action("CambiarNIP", "Login")"><button name="btnCambiar" class="btn btn-outline-primary btn-lg">Cambiar NIP</button></a><br />
-
-            </div>
-            <div class="col-sm-4 ">
-                
-            </div>
-            <div class="col-sm-4 offset-md-4" hidden="@ViewData("flag")">
                 <a href="@Url.Action("Usuario_Nuevo", "Login")"><button name="Agregar" class="btn btn-outline-primary btn-lg">Agregar Usuarios</button></a><br />
-            </div>
+           
+            
         </div>
-    </div>
-
-
-    <div class="fixed-bottom" style=" bottom:30px; right:25px;">
+        </div>
+    <div class="" style="margin-bottom:30px; margin-right:20px">
         <a class="pull-right" href="@Url.Action("Index", "Login")"><button name="btnSalir" class="btn btn-outline-secondary btn-lg">Salir</button></a>
     </div>
 
 
     <style>
         .mh1 {
-            padding-top: 5%;
             margin-top: 10%;
             margin-bottom: 10%;
         }
@@ -83,12 +57,9 @@ End Code
         }
 
         .btn {
-            width: 120px;
+            
         }
 
-        .image {
-            display: none;
-        }
     </style>
 </body>
 </html>

@@ -32,12 +32,12 @@ End Code
             <input type="text" name="apellidos" value="" /><br /><br />
             <label>Direccion: </label><br />
             <input type="text" name="direccion" value="" /><br /><br />
-            <label>Saldo:</label><br />
-            <input type="number" name="saldo" value="" /><br /><br />
+            @*<label>Saldo:</label><br />
+            <input type="number" name="saldo" value="" /><br /><br />*@
             <label>Fecha de alta: </label><br />
             <input type="date" name="fecha_alta" value="" /><br /><br />
             <label>Tipo:</label><br />
-            <select>
+            <select name="tipo_usuario">
                 <option value="0">Admin</option>
                 <option value="1">Cliente</option>
             </select><br /><br />

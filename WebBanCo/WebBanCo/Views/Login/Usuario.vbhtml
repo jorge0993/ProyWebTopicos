@@ -31,7 +31,6 @@ End Code
             <label>Direccion: @Model.direccion</label><br />
             <label>Saldo: @Model.saldo</label><br />
             <label>Fecha de alta: @Model.fecha_alta</label><br />
-            <button type="button">Guardar</button>
         </form>
     </div>
     <div class="fixed-bottom">

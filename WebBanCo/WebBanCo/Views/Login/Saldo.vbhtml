@@ -23,8 +23,8 @@ End Code
     <title>Saldo</title>
 </head>
 <body class="container-fluid">
-    <div class="container">
-        <label class="saldo" style="left:40%; margin-top:25%;">Credito disponible:</label>
+    <div class="container" style="text-align:center; margin-top:300px">
+        <h1 class="saldo" >Credito disponible: <br /> @ViewData("monto")</h1>
 
 
 
