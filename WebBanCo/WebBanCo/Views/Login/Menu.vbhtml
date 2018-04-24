@@ -36,7 +36,7 @@ End Code
                 <a href="@Url.Action("Movimientos", "Login")"><button name="btnMovimientos" class="btn btn-outline-primary btn-lg">Movimientos</button></a><br />
                 <a href="@Url.Action("Pagos", "Login")"><button name="btnPagos" class="btn btn-outline-primary btn-lg">Pagos</button></a><br />
                 <a href="@Url.Action("CambiarNIP", "Login")"><button name="btnCambiar" class="btn btn-outline-primary btn-lg">Cambiar NIP</button></a><br />
-                <a href="@Url.Action("Usuario_Nuevo", "Login")"><button name="Agregar" class="btn btn-outline-primary btn-lg">Agregar Usuarios</button></a><br />
+                <a style="display:<%@ViewData("flag")%>" href="@Url.Action("Usuario_Nuevo", "Login")"><button name="Agregar" class="btn btn-outline-primary btn-lg">Agregar Usuarios</button></a><br />
            
             
         </div>

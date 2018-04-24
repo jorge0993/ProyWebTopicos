@@ -27,6 +27,7 @@ End Code
 
 
     <div style="text-align:center" class="container center_div ">
+        <img src="\Imagenes\bancp1.png" width="200" height="200" />
         <form action="@Url.Action("Menu", "Login")" method="post">
             <div class="form-group">
                 <label class="lbl">PIN:</label>

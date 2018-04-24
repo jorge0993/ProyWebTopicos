@@ -55,22 +55,25 @@ Namespace Controllers
         End Function
 
         Function Menu() As ActionResult
-            Dim tipo As String, flag As Boolean = False
-            tipo = System.Configuration.ConfigurationManager.AppSettings("tipo_usuario").ToString()
-            If Not Convert.ToBoolean(System.Configuration.ConfigurationManager.AppSettings("sesion")) Then
-                If con.ValidarPIN(Convert.ToString(Request.Form("txtNIP"))) Then
-                    System.Configuration.ConfigurationManager.AppSettings("sesion") = True
-                    If tipo Is "1" Then
-                        flag = True
-                    End If
-                    ViewData("flag") = flag
-                    Return View()
-                Else
-                    Return View("LoginPIN")
-                End If
+            Dim flag As String = "block"
+            If System.Configuration.ConfigurationManager.AppSettings("tipo_usuario").ToString() Is "1" Then
+                flag = "none"
+            End If
+            ViewData("flag") = flag
+            If System.Configuration.ConfigurationManager.AppSettings("sesion") Then
+                Return View()
             Else
-                Return View("Index")
+                If Request.Form("txtNIP") IsNot Nothing Or Request.Form("txtNIP") IsNot "" Then
+                    If con.ValidarPIN(Convert.ToString(Request.Form("txtNIP"))) Then
+                        System.Configuration.ConfigurationManager.AppSettings("sesion") = True
+                        Return View()
+                    Else
+                        Return View("LoginPIN")
+                    End If
+                Else
+                    Return View("Index")
                 End If
+            End If
 
         End Function
 
