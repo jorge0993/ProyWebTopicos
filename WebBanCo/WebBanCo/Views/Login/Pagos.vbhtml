@@ -19,7 +19,7 @@ End Code
 <body class="container-fluid">
     <div style="text-align:center">
         <img src="\Imagenes\bancp1.png" width="200" height="200" />
-        <form style="margin-top:50px;margin-left:20%;margin-right:20%; margin-bottom:10% " class="form-horizontal" action="/action_page.php">
+        <form style="margin-top:50px;margin-left:20%;margin-right:20%; margin-bottom:10% " class="form-horizontal" action="@Url.Action("RealizarPago", "Login")" method="post">
             <div class="form-group">
                 <label for="servicio">Seleccione el servicio a pagar:</label>
                 <select class="form-control" id="servicio" name="servicio">

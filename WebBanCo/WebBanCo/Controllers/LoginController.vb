@@ -26,11 +26,11 @@ Namespace Controllers
             If System.Configuration.ConfigurationManager.AppSettings("sesion") Then
 
                 Dim objUsuario As New Usuario()
-                objUsuario.numero_tarjeta = Convert.ToString(Request.Form("numero_tarjeta"))
-                objUsuario.pin = Convert.ToString(Request.Form("pin"))
-                objUsuario.nombres = Convert.ToString(Request.Form("nombres"))
-                objUsuario.apellidos = Convert.ToString(Request.Form("apellidos"))
-                objUsuario.direccion = Convert.ToString(Request.Form("direccion"))
+                objUsuario.numero_tarjeta = Request.Form("numero_tarjeta").ToString()
+                objUsuario.pin = Request.Form("pin").ToString()
+                objUsuario.nombres = Request.Form("nombres")
+                objUsuario.apellidos = Request.Form("apellidos")
+                objUsuario.direccion = Request.Form("direccion")
                 objUsuario.saldo = 0.0
                 objUsuario.fecha_alta = Convert.ToDateTime(Request.Form("fecha_alta"))
                 objUsuario.tipo_usuario = Convert.ToInt16(Request.Form("tipo_usuario"))

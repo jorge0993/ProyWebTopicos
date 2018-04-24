@@ -54,23 +54,24 @@ Public Class Conexion
     '    End Try
     'End Sub
 
-    Public Function agregarUsuario(ByVal Tarjeta As String, ByVal PIN As String, ByVal Nombres As String, ByVal Apellidos As String, ByVal Direccion As String, ByVal FechaAlta As String, ByVal TipoUsuario As Integer) As Boolean
-        Dim Resultado As Boolean = True
+    Public Function agregarUsuario(Tarjeta As String, PIN As String, Nombres As String, Apellidos As String, Direccion As String, Fecha As Date, TipoUsuario As Integer)
+        Dim Resultado As Boolean = False
         Dim SaldoUsuario As Integer = 0
+        Dim FechaAlta As String
+        FechaAlta = Convert.ToString(Fecha.ToString("MM/dd/yyyy"))
         Try
             Dim Sql As String = "Select Numero_tarjeta from Usuarios where Numero_tarjeta='" & Tarjeta & "'"
             Me.cmd = New SqlCommand(Sql, Me.cn)
             If Me.cmd.ExecuteNonQuery() = 1 Then
-                MsgBox("Ya hay un usuario registrado con ese número de tarjeta." & vbNewLine & "No. de Tarjeta " + Tarjeta)
+                Resultado = False
             Else
-                Sql = "Insert Into Usuarios(Numero_tarjeta,PIN,Saldo,Nombres,Apellidos,Direccion,FechaAlta,TipoUsuario) values('" & Tarjeta & "'," & PIN & "," & SaldoUsuario & ",'" & Nombres & "','" & Apellidos & "','" & Direccion & "','" & FechaAlta & "'," & TipoUsuario & ")"
+                Sql = "Insert Into Usuarios(Numero_tarjeta,PIN,Saldo,Nombres,Apellidos,Direccion,FechaAlta,TipoUsuario) values('" & Tarjeta & "','" & PIN & "'," & SaldoUsuario & ",'" & Nombres & "','" & Apellidos & "','" & Direccion & "','" & FechaAlta & "'," & TipoUsuario & ")"
                 Me.cmd = New SqlCommand(Sql, Me.cn)
                 If Me.cmd.ExecuteNonQuery() = 1 Then
                     Resultado = True
                 End If
             End If
         Catch ex As Exception
-
         End Try
         Return Resultado
     End Function
