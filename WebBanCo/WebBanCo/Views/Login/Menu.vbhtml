@@ -25,41 +25,67 @@ End Code
 </head>
 
 <body class="container-fluid">
-    <diV style="text-align:center;margin-left:100px; margin-top:100px">
-        <img src="\Imagenes\bancp1.png" width="200" height="200" />
+    <div class="container">
+        <div class="row bg-faded">
+            <div class="col-4 mx-auto text-center">
+                <img src="\Imagenes\bancp1.png" width="200" height="200" /> <!-- center this image within the column -->
+                <p>centered</p>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div style="text-align:center;margin-left:150px; margin-top:100px">
+        
 
         <div style="margin-top:50px">
+            <div class="row rowMargin mh1">
+                <div class="col-sm-4 ">
+                    <a href="@Url.Action("Saldo", "Login")"><button name="btnSaldo" class="btn btn-outline-primary btn-lg">Saldo</button></a><br />
+                </div>
+                <div class="col-sm-8">
+                    <a href="@Url.Action("Retiros", "Login")"><button name="btnRetiro" class="btn btn-outline-primary btn-lg">Retiro</button></a><br />
+                </div>
+            </div>
+            <div class="row rowMargin mh1">
+                <div class="col-sm-4 ">
+                    <a href="@Url.Action("Movimientos", "Login")"><button name="btnMovimientos" class="btn btn-outline-primary btn-lg">Movimientos</button></a><br />
+                </div>
+                <div class="col-sm-8">
+                    <a href="@Url.Action("Pagos", "Login")"><button name="btnPagos" class="btn btn-outline-primary btn-lg">Pagos</button></a><br />
+                </div>
+            </div>
+            <div class="row rowMargin mh1">
+                <div class="col-sm-4 ">
+                    <a href="@Url.Action("CambiarNIP", "Login")"><button name="btnCambiar" class="btn btn-outline-primary btn-lg">Cambiar NIP</button></a><br />
+                </div>
+                <div class="col-sm-8">
+                    <a style="display:<%@ViewData("flag")%>" href="@Url.Action("Usuario_Nuevo", "Login")"><button name="Agregar" class="btn btn-outline-primary btn-lg">Agregar Usuarios</button></a><br />
+                </div>
+            </div>    
 
-           
-                <a href="@Url.Action("Saldo", "Login")"><button name="btnSaldo" class="btn btn-outline-primary btn-lg">Saldo</button></a><br />
-                <a href="@Url.Action("Retiros", "Login")"><button name="btnRetiro" class="btn btn-outline-primary btn-lg">Retiro</button></a><br />
-                <a href="@Url.Action("Movimientos", "Login")"><button name="btnMovimientos" class="btn btn-outline-primary btn-lg">Movimientos</button></a><br />
-                <a href="@Url.Action("Pagos", "Login")"><button name="btnPagos" class="btn btn-outline-primary btn-lg">Pagos</button></a><br />
-                <a href="@Url.Action("CambiarNIP", "Login")"><button name="btnCambiar" class="btn btn-outline-primary btn-lg">Cambiar NIP</button></a><br />
-                <a style="display:<%@ViewData("flag")%>" href="@Url.Action("Usuario_Nuevo", "Login")"><button name="Agregar" class="btn btn-outline-primary btn-lg">Agregar Usuarios</button></a><br />
-           
-            
+
+            <div class="" style="margin-bottom:30px; margin-right:20px">
+                <a class="pull-right" href="@Url.Action("Index", "Login")"><button name="btnSalir" class="btn btn-outline-secondary btn-lg">Salir</button></a>
+            </div>
         </div>
-        </div>
-    <div class="" style="margin-bottom:30px; margin-right:20px">
-        <a class="pull-right" href="@Url.Action("Index", "Login")"><button name="btnSalir" class="btn btn-outline-secondary btn-lg">Salir</button></a>
     </div>
 
+            <style>
+                .mh1 {
+                    margin-top: 10%;
+                    margin-bottom: 10%;
+                }
 
-    <style>
-        .mh1 {
-            margin-top: 10%;
-            margin-bottom: 10%;
-        }
+                .center {
+                    vertical-align: central;
+                }
 
-        .center {
-            vertical-align: central;
-        }
-
-        .btn {
-            
-        }
-
-    </style>
+                .btn {
+                    margin: 5px;
+                    width: 120px;
+                    height: 50px;
+                }
+            </style>
 </body>
 </html>

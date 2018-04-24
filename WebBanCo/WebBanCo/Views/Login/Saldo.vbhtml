@@ -23,20 +23,30 @@ End Code
     <title>Saldo</title>
 </head>
 <body class="container-fluid">
-    <div class="container" style="text-align:center; margin-top:300px">
-        <h1 class="saldo" >Credito disponible: <br /> @ViewData("monto")</h1>
-    
-
-
+    <div class="container">
+        <div class="row bg-faded">
+            <div class="col-4 mx-auto text-center">
+                <img src="\Imagenes\bancp1.png" width="200" height="200" /> 
+            </div>
+        </div>
     </div>
+    <div class="container" style="text-align:center; margin-top:200px">
+        <h1 class="saldo" >Credito disponible: <br /> @ViewData("monto")</h1>
+    </div>
+
     <div class="fixed-bottom">
-        <a class="pull-right" href="@Url.Action("Index", "Login")"><button name="btnSalir" class="btn btn-outline-secondary btn-lg">Salir</button></a>
-        <a class="pull-left" href="@Url.Action("Menu", "Login")"><button name="btnSalir" class="btn btn-outline-secondary btn-lg">Regresar</button></a>
+        <a class="pull-right" href="@Url.Action("Index", "Login")"><button name="btnSalir" class="btn btn-outline-secondary btn-lg" style="margin-bottom:15px; margin-right:20px">Salir</button></a>
+        <a class="pull-left" href="@Url.Action("Menu", "Login")"><button name="btnSalir" class="btn btn-outline-secondary btn-lg" style="margin-bottom:15px; margin-left:20px">Regresar</button></a>
     </div>
 
     <style>
         .pull-left {
             bottom: 20px;
+        }
+        .btn {
+            margin: 5px;
+            width: 120px;
+            height: 50px;
         }
     </style>
 </body>
