@@ -108,6 +108,26 @@ Namespace Controllers
                 Return View("Index")
             End If
         End Function
+
+        Function CambiarNIP2() As ActionResult
+            If System.Configuration.ConfigurationManager.AppSettings("sesion") Then
+                Dim nipActual = If(Request.Form("nipActual") IsNot Nothing, Request.Form("nipActual").ToString(), "")
+                Dim nuevoNip = If(Request.Form("nuevoNip") IsNot Nothing, Request.Form("nuevoNip").ToString(), "")
+                Dim confirmar = If(Request.Form("confirmar") IsNot Nothing, Request.Form("confirmar").ToString(), "")
+                If nipActual <> "" And nuevoNip <> "" And confirmar <> "" Then
+                    Dim result = con.CambiarPIN(Convert.ToInt16(nuevoNip), Convert.ToInt16(confirmar))
+                    If result.Equals("Exito") Then
+                        Return Redirect("/Login/Menu")
+                    Else
+                        'Regresar mensaje de confirmacion
+                    End If
+                End If
+
+            Else
+                Return View("Index")
+            End If
+        End Function
+
         Function Saldo() As ActionResult
             If Convert.ToBoolean(System.Configuration.ConfigurationManager.AppSettings("sesion")) Then
                 Dim monto As Double
@@ -116,6 +136,17 @@ Namespace Controllers
                 Return View()
             Else
                 Return View("Index")
+            End If
+        End Function
+
+        Function Retiro(cantidad As String) As ActionResult
+            Dim result = con.RealizarMovimiento("Retiro", Convert.ToInt32(cantidad), "Retiro")
+            If Not result.Equals("No cuenta con el saldo suficiente") Then
+                Return Redirect("/Login/Menu")
+            Else
+                'Redireccionar a ventana con mensaje de confirmacion
+                Return Redirect("/Login/RetirosAf")
+
             End If
         End Function
 

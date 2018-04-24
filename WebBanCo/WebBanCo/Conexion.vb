@@ -245,24 +245,25 @@ Public Class Conexion
 
     End Function
 
-    'Public Function CambiarPIN(NuevoPIN As Integer, confirmar As Boolean)
+    Public Function CambiarPIN(NuevoPIN As Integer, confirmar As Boolean)
 
-    '    Dim Resultado As String = "El PIN fue cambiado con exito"
-    '    Try
-    '        If (confirmar = True) Then
-    '            cmd = New SqlCommand("update Usuarios set PIN = " & NuevoPIN & " where Numero_tarjeta = '" & Tarjeta & "'", cn)
-    '            cmd.ExecuteNonQuery()
-    '        Else
-    '            Resultado = "Contraseña actual incorrecta"
-    '        End If
+        Dim Resultado As String = "Exito"
+        Try
+            If (confirmar = True) Then
+                cmd = New SqlCommand("update Usuarios set PIN = " & NuevoPIN & " where Numero_tarjeta = '" & System.Configuration.ConfigurationManager.AppSettings("tarjeta").ToString().Trim() & "'", cn)
+                cmd.ExecuteNonQuery()
+            Else
+                Resultado = "Contraseña actual incorrecta"
+            End If
 
-    '    Catch ex As Exception
+        Catch ex As Exception
 
-    '        Resultado = "Ha ucurrido un error " + ex.ToString()
-    '    End Try
-    '    dr.Close()
-    '    Return Resultado
-    'End Function
+            Resultado = "Ha ucurrido un error " + ex.ToString()
+        End Try
+
+        Return Resultado
+    End Function
+
     'Public Sub mostrarMovimientos(dg As DataGridView)
     '    Dim sql As String = "Select Tarjeta,TipoMovimiento,CantidadMovimiento from Movimientos where Tarjeta=" & Tarjeta
     '    Dim cmd As New SqlCommand(sql, cn)

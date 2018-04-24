@@ -44,5 +44,10 @@ Public Module RouteConfig
             url:="{controller}/{action}/{id}",
             defaults:=New With {.controller = "Login", .action = "CambiarNIP", .id = UrlParameter.Optional}
         )
+        routes.MapRoute(
+            name:="RetirosAf",
+            url:="{controller}/{action}/{id}",
+            defaults:=New With {.controller = "Login", .action = "RetirosAf", .id = UrlParameter.Optional}
+        )
     End Sub
 End Module
