@@ -24,10 +24,10 @@ End Code
     <title>LoginPIN</title>
 </head>
 <body class="container-fluid" style="text-align:center">
-
-
-    <div style="text-align:center" class="container center_div ">
+    <div style="margin-top:50px; text-align:center">
         <img src="\Imagenes\bancp1.png" width="200" height="200" />
+    </div>
+    <div style="text-align:center" class="container center_div ">
         <form action="@Url.Action("Menu", "Login")" method="post">
             <div class="form-group">
                 <label class="lbl">PIN:</label>
@@ -53,7 +53,7 @@ End Code
         .center_div {
             margin: 0 auto;
             width: 50%; /* value of your choice which suits your alignment */
-            margin-top: 25%;
+            margin-top:5%;
         }
     </style>
 
