@@ -18,16 +18,17 @@ End Code
 </head>
 <body class="container-fluid">
     <form action="">
-        <button name="btn50">$50</button><br />
-        <button name="btn100">$100</button><br />
-        <button name="btn500">$500</button><br />
-        <button name="btn1000">$1000</button><br />
-        <button name="btn2000">$2000</button><br />
-        <button name="btnOtraCantidad">Otra Cantidad</button>
+        <input type="button" class="btn btn-outline-primary btn-lg" value="$50" onclick="location.href='@Url.Action("Retiro", "Login", New With {.cantidad = "50"})'" />
+        <input type="button" value="$100" onclick="location.href='@Url.Action("Retiro", "Login", New With {.cantidad = "100"})'" />
+        <input type="button" value="$500" onclick="location.href='@Url.Action("Retiro", "Login", New With {.cantidad = "500"})'" />
+        <input type="button" value="$1000" onclick="location.href='@Url.Action("Retiro", "Login", New With {.cantidad = "1000"})'" />
+        <input type="button" value="$2000" onclick="location.href='@Url.Action("Retiro", "Login", New With {.cantidad = "2000"})'" />       
     </form>
-    <div class="fixed-bottom ">
-        <a class="pull-right" href="@Url.Action("Index", "Login")"><button name="btnSalir">Salir</button></a>
-        <a class="pull-right" href="@Url.Action("Menu", "Login")"><button name="btnSalir">Regresar</button></a>
+
+
+    <div Class="fixed-bottom ">
+        <a Class="pull-right" href="@Url.Action("Index", "Login")"><button name="btnSalir">Salir</button></a>
+        <a Class="pull-right" href="@Url.Action("Menu", "Login")"><button name="btnSalir">Regresar</button></a>
     </div>
 </body>
 </html>
