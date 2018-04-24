@@ -278,4 +278,70 @@ Public Class Conexion
     '        MsgBox(ex.Message)
     '    End Try
     'End Sub
+
+    Public Function RealizarMovimiento(NombreMov As String, CantidadRetirada As Integer, movimiento As String)
+
+        Dim TipoMov As String = ""
+        If (ValidarRetiro(CantidadRetirada) = True) Then
+
+            Dim idultimo As Integer = 0
+            cmd = New SqlCommand("Select * from Movimientos order by IdMovimientos desc", cn)
+            dr = cmd.ExecuteReader()
+            dr.Read()
+
+            dr.Close()
+
+            cmd = New SqlCommand("Insert Into Movimientos(TipoMovimiento,Tarjeta,CantidadMovimiento) values ('" & NombreMov & "','" & System.Configuration.ConfigurationManager.AppSettings("tarjeta").ToString().Trim() & "'," & CantidadRetirada & ")", cn)
+            cmd.ExecuteNonQuery()
+            RestarSaldo(CantidadRetirada)
+
+            If (movimiento = "Retiro") Then
+
+                TipoMov = "Retiro realizado correctamente"
+
+            ElseIf (movimiento = "Pago") Then
+
+                TipoMov = "El pago se realizado correctamente"
+
+            ElseIf (movimiento = "Recarga") Then
+
+                TipoMov = "La recarga se realizado correctamente"
+            End If
+
+        Else
+
+            TipoMov = "No cuenta con el saldo suficiente"
+        End If
+        Return TipoMov
+
+    End Function
+
+    Public Sub RestarSaldo(Cantidad As Integer)
+        Dim SaldoNuevo As Integer = 0
+
+        cmd = New SqlCommand("Select * from Usuarios where Numero_tarjeta = '" & System.Configuration.ConfigurationManager.AppSettings("tarjeta").ToString().Trim() & "'", cn)
+        dr = cmd.ExecuteReader()
+        While (dr.Read())
+            SaldoNuevo = Convert.ToInt32(dr("Saldo").ToString()) - Cantidad
+        End While
+        dr.Close()
+
+        cmd = New SqlCommand("update Usuarios set Saldo=@Saldo where Numero_tarjeta = '" & System.Configuration.ConfigurationManager.AppSettings("tarjeta").ToString().Trim() & "'", cn)
+        cmd.Parameters.AddWithValue("Saldo", SaldoNuevo)
+        cmd.ExecuteNonQuery()
+    End Sub
+
+    Public Function ValidarRetiro(cantidad As Integer)
+        Dim Validar As Boolean = True
+        cmd = New SqlCommand("Select * from Usuarios where Numero_tarjeta='" & System.Configuration.ConfigurationManager.AppSettings("tarjeta").ToString().Trim() & "'", cn)
+        dr = cmd.ExecuteReader()
+        While (dr.Read())
+            If (Convert.ToInt32(dr("Saldo").ToString()) < cantidad) Then
+                Validar = False
+            End If
+        End While
+        dr.Close()
+        Return Validar
+
+    End Function
 End Class
