@@ -13,11 +13,14 @@ Namespace Controllers
             Return View()
         End Function
         Function LoginPIN() As ActionResult
+            Dim mensaje As String = Nothing
             System.Configuration.ConfigurationManager.AppSettings("tipo_usuario") = con.VerificarUsuario(Convert.ToString(Request.Form("txtTarjeta")))
             If System.Configuration.ConfigurationManager.AppSettings("tipo_usuario") IsNot "-1" Then
                 System.Configuration.ConfigurationManager.AppSettings("tarjeta") = Convert.ToString(Request.Form("txtTarjeta"))
                 Return View()
             Else
+                mensaje = "Introduzca bien su número de tarjeta"
+                ViewData("mensaje") = mensaje
                 Return View("Index")
             End If
 
@@ -55,6 +58,7 @@ Namespace Controllers
         End Function
 
         Function Menu() As ActionResult
+            Dim mensaje As String = Nothing
             Dim flag As String = "block"
             If System.Configuration.ConfigurationManager.AppSettings("tipo_usuario").ToString() Is "1" Then
                 flag = "none"
@@ -68,6 +72,8 @@ Namespace Controllers
                         System.Configuration.ConfigurationManager.AppSettings("sesion") = True
                         Return View()
                     Else
+                        mensaje = "PIN incorrecto"
+                        ViewData("mensaje") = mensaje
                         Return View("LoginPIN")
                     End If
                 Else
@@ -148,6 +154,14 @@ Namespace Controllers
                 Return Redirect("/Login/RetirosAf")
 
             End If
+        End Function
+
+        Function RealizarPago() As ActionResult
+            Dim mensaje As String = Nothing
+            Dim result = con.RealizarMovimiento(Request.Form("servicio"), Convert.ToInt32(Request.Form("cantidad")), "Pago")
+            mensaje = result
+            ViewData("mensaje") = mensaje
+                Return View("Pagos")
         End Function
 
     End Class

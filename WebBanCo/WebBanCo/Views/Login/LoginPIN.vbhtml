@@ -35,25 +35,29 @@ End Code
 
             </div>
             <button type="submit" name="btnEntrar" class="btn btn-primary">Entrar</button>
-        </form>
-
+        </form><br />
+        @If ViewData("mensaje") <> Nothing Then
+            @<div Class="alert alert-warning">
+                     <strong>Notificación: </strong> @ViewData("mensaje")
+            </div>
+        End If
     </div>
 
 
 
     <style>
         .lbl {
-            font-size: 20px;
+            font-size:     20px;
         }
 
         .btn {
-            width: 120px;
+            width:     120px;
         }
 
         .center_div {
-            margin: 0 auto;
+            margin:     0 auto;
             width: 50%; /* value of your choice which suits your alignment */
-            margin-top:5%;
+            margin-top:    5%;
         }
     </style>
 

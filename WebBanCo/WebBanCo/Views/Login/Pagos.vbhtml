@@ -24,10 +24,10 @@ End Code
                 <label for="servicio">Seleccione el servicio a pagar:</label>
                 <select class="form-control" id="servicio" name="servicio">
                     <option value="" selected disabled>Seleccione una opcion</option>
-                    <option value="Luz">Luz</option>
-                    <option value="Agua">Agua</option>
-                    <option value="Recarga Telcel">Recarga Telcel</option>
-                    <option value="TV Cable">TV Cable</option>
+                    <option value="Pago Servicio: Luz">Luz</option>
+                    <option value="Pago Servicio: Agua">Agua</option>
+                    <option value="Pago Servicio: TV Cable">TV Cable</option>
+                    <option value="Recarga: Telcel">Recarga Telcel</option>
                 </select>
             </div>
             <div class="form-group">
@@ -40,7 +40,19 @@ End Code
                     <button type="reset" class="btn btn-warning">Cancelar</button>
                 </div>
             </div>
-        </form>
+        </form><br />
+        @If ViewData("mensaje") <> Nothing Then
+            If ViewData("mensaje") Is "No cuenta con el saldo suficiente" Then
+                @<div Class="alert alert-warning">
+                    <strong>Notificación: </strong> @ViewData("mensaje")
+                </div>
+            Else
+                @<div Class="alert alert-success">
+                    <strong>Notificación: </strong> @ViewData("mensaje")
+                </div>
+            End If
+        End If
+
     </div>
     <div class="fixed-bottom">
         <button class="btn btn-default pull-right"  name="btnSalir"><a href="@Url.Action("Index", "Login")">Salir</a></button>
