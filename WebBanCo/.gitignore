@@ -1,0 +1,7 @@
+.vs/
+ WebBanCo/My Project/Settings.settings
+ WebBanCo/My Project/Settings.Designer.vb
+ WebBanCo/Web.config
+WebBanCo/bin/
+WebBanCo/obj/Debug/
+WebBanCo/obj/Debug/TempPE/

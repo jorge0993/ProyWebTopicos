@@ -19,47 +19,24 @@ End Code
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width" />
-    <title>LoginPIN</title>
+    <title>Saldo</title>
 </head>
-<body class="container-fluid" style="text-align:center">
-    <div style="margin-top:50px; text-align:center">
-        <img src="\Imagenes\bancp1.png" width="200" height="200" />
+<body class="container-fluid">
+    <div class="container" style="text-align:center; margin-top:300px">
+        <h1 class="saldo">No tiene credito disponible. Redirigiendo... <br /> </h1>
+
+
+
     </div>
-    <div style="text-align:center" class="container center_div ">
-        <form action="@Url.Action("Menu", "Login")" method="post">
-            <div class="form-group">
-                <label class="lbl">PIN:</label>
-                <input type="password" class="form-control" placeholder="Introduzca PIN" name="txtNIP" required>
-
-            </div>
-            <button type="submit" name="btnEntrar" class="btn btn-primary">Entrar</button>
-            <br />
-            @If ViewData("mensaje") <> Nothing Then
-            @<div Class="alert alert-warning">
-                <strong>Notificación: </strong> @ViewData("mensaje")
-            </div>
-        End If
-        </form>
-        
+    <div class="fixed-bottom">
+        <a class="pull-right" href="@Url.Action("Index", "Login")"><button name="btnSalir" class="btn btn-outline-secondary btn-lg">Salir</button></a>
+        <a class="pull-left" href="@Url.Action("Menu", "Login")"><button name="btnSalir" class="btn btn-outline-secondary btn-lg">Regresar</button></a>
     </div>
-
-
 
     <style>
-        .lbl {
-            font-size:     20px;
-        }
-
-        .btn {
-            width:     120px;
-        }
-
-        .center_div {
-            margin:     0 auto;
-            width: 50%; /* value of your choice which suits your alignment */
-            margin-top:    5%;
+        .pull-left {
+            bottom: 20px;
         }
     </style>
-
 </body>
 </html>
