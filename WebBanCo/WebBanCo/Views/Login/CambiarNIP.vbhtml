@@ -46,7 +46,12 @@ End Code
                             <input type="password" class="form-control" placeholder="Nuevo NIP" name="confirmar"><br /> <br />
                             <button type="submit" class="btn btn-primary ">Cambiar</button>
                         </div>
-
+                        @If ViewData("error") <> Nothing Then
+                            @<div Class="alert alert-warning">
+                                <strong>Notificación: </strong> @ViewData("error")
+                                <br />
+                            </div>
+                        End If
                     </form>
                 </div>
             </div>
@@ -65,6 +70,11 @@ End Code
 
         .container {
             margin-bottom: 50px;
+        }
+        .btn {
+            margin: 5px;
+            width: 120px;
+            height: 50px;
         }
     </style>
 </body>

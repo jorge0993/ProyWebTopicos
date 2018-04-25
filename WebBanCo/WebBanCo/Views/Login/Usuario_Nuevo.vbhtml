@@ -32,7 +32,12 @@ End Code
     <div style="text-align:center; margin-top:40px; width:250px; " class="container">
         <h2>Agregar Usuarios</h2><br />
 
-        <form action="@Url.Action("Usuario", "Login")" method="post" id="formu">
+        <form action="@Url.Action("Usuario", "Login")" method="post" >
+            @If ViewData("error") <> Nothing Then
+                @<div Class="alert alert-warning">
+                    <strong>Notificación: </strong> @ViewData("error")
+                     <br /></div>
+            End If
             <label>Numero de tarjeta:</label><br />
             <input class="form-control" type="text" name="numero_tarjeta" value="" /><br /><br />
             <label>PIN:</label><br />
@@ -43,8 +48,6 @@ End Code
             <input class="form-control" type="text" name="apellidos" value="" /><br /><br />
             <label>Direccion: </label><br />
             <input class="form-control" type="text" name="direccion" value="" /><br /><br />
-            @*<label>Saldo:</label><br />
-                <input type="number" name="saldo" value="" /><br /><br />*@
             <label>Fecha de alta: </label><br />
             <input type="date" name="fecha_alta" value="" /><br /><br />
             <label>Tipo:</label><br />
@@ -54,7 +57,7 @@ End Code
             </select><br /><br />
             <button type="submit" name="guardar" class="btn btn-info">Guardar</button>
         </form>
-    </div>
+    </div><br />
     <div class="fixed-bottom">
         <a class="pull-right" href="@Url.Action("Index", "Login")"><button name="btnSalir" class="btn btn-outline-secondary btn-lg" style="margin-bottom:15px; margin-right:20px">Salir</button></a>
         <a class="pull-left" href="@Url.Action("Menu", "Login")"><button name="btnSalir" class="btn btn-outline-secondary btn-lg" style="margin-bottom:15px; margin-left:20px">Regresar</button></a>

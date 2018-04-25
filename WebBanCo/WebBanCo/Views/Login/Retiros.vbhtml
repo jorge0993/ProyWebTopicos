@@ -39,6 +39,17 @@ End Code
                     <input type="button" class="btn btn-secondary" value="$500" onclick="location.href='@Url.Action("Retiro", "Login", New With {.cantidad = "500"})'" /><br />
                     <input type="button" class="btn btn-secondary" value="$1000" onclick="location.href='@Url.Action("Retiro", "Login", New With {.cantidad = "1000"})'" /><br />
                     <input type="button" class="btn btn-secondary" value="$2000" onclick="location.href='@Url.Action("Retiro", "Login", New With {.cantidad = "2000"})'" />
+                @If ViewData("mensaje") <> Nothing Then
+                If ViewData("mensaje") Is "No cuenta con el saldo suficiente" Then
+                        @<div Class="alert alert-warning">
+                            <strong>Notificación: </strong> @ViewData("mensaje")
+                        </div>
+                    Else
+                        @<div Class="alert alert-success">
+                            <strong>Notificación: </strong> @ViewData("mensaje")
+                        </div>
+                    End If
+                End If
                 </form>
             </div>
         </div>

@@ -33,12 +33,14 @@ End Code
 
             </div>
             <button type="submit" name="btnEntrar" class="btn btn-primary">Entrar</button>
-        </form><br />
-        @If ViewData("mensaje") <> Nothing Then
+            <br />
+            @If ViewData("mensaje") <> Nothing Then
             @<div Class="alert alert-warning">
-                     <strong>Notificación: </strong> @ViewData("mensaje")
+                <strong>Notificación: </strong> @ViewData("mensaje")
             </div>
         End If
+        </form>
+        
     </div>
 
 

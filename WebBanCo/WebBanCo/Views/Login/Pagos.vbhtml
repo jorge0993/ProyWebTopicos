@@ -32,7 +32,7 @@ End Code
                     <option value="Pago Servicio: Luz">Luz</option>
                     <option value="Pago Servicio: Agua">Agua</option>
                     <option value="Pago Servicio: TV Cable">TV Cable</option>
-                    <option value="Recarga: Telcel">Recarga Telcel</option>
+                    
                 </select>
             </div>
             <div class="form-group">
@@ -45,26 +45,32 @@ End Code
                     <button type="reset" class="btn btn-warning">Cancelar</button>
                 </div>
             </div>
-        </form><br />
-        @If ViewData("mensaje") <> Nothing Then
-            If ViewData("mensaje") Is "No cuenta con el saldo suficiente" Then
+            @If ViewData("mensaje") <> Nothing Then
+                If ViewData("mensaje") Is "No cuenta con el saldo suficiente" Then
+                    @<div Class="alert alert-warning">
+                        <strong>Notificación: </strong> @ViewData("mensaje")
+                    </div>
+                Else
+                    @<div Class="alert alert-success">
+                        <strong>Notificación: </strong> @ViewData("mensaje")
+                    </div>
+                End If
+            End If
+            @If ViewData("error") <> Nothing Then
                 @<div Class="alert alert-warning">
-                    <strong>Notificación: </strong> @ViewData("mensaje")
-                </div>
-            Else
-                @<div Class="alert alert-success">
-                    <strong>Notificación: </strong> @ViewData("mensaje")
+                    <strong>Notificación: </strong> @ViewData("error")
                 </div>
             End If
-        End If
+        </form>
+        
     </div>
-    <div class="fixed-bottom">
-        <a class="pull-right" href="@Url.Action("Index", "Login")"><button name="btnSalir" class="btn btn-outline-secondary btn-lg" style="margin-bottom:15px; margin-right:20px">Salir</button></a>
-        <a class="pull-left" href="@Url.Action("Menu", "Login")"><button name="btnSalir" class="btn btn-outline-secondary btn-lg" style="margin-bottom:15px; margin-left:20px">Regresar</button></a>
+    <div Class="fixed-bottom">
+        <a Class="pull-right" href="@Url.Action("Index", "Login")"><button name="btnSalir" class="btn btn-outline-secondary btn-lg" style="margin-bottom:15px; margin-right:20px">Salir</button></a>
+        <a Class="pull-left" href="@Url.Action("Menu", "Login")"><button name="btnSalir" class="btn btn-outline-secondary btn-lg" style="margin-bottom:15px; margin-left:20px">Regresar</button></a>
     </div>
 
-    <style>
-        label {
+    <Style>
+                        label {
             font-size: 14px;
         }
 
@@ -83,7 +89,7 @@ End Code
         }
 
         .btn {
-            margin: 5px;
+            margin:     5px;
             width: 120px;
             height: 50px;
             font-size: 15px;

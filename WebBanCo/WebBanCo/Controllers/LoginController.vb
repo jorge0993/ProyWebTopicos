@@ -26,26 +26,33 @@ Namespace Controllers
 
         End Function
         Function Usuario() As ActionResult
-            If System.Configuration.ConfigurationManager.AppSettings("sesion") Then
+            ViewData("error") = Nothing
+            Try
+                If System.Configuration.ConfigurationManager.AppSettings("sesion") Then
 
-                Dim objUsuario As New Usuario()
-                objUsuario.numero_tarjeta = Request.Form("numero_tarjeta").ToString()
-                objUsuario.pin = Request.Form("pin").ToString()
-                objUsuario.nombres = Request.Form("nombres")
-                objUsuario.apellidos = Request.Form("apellidos")
-                objUsuario.direccion = Request.Form("direccion")
-                objUsuario.saldo = 0.0
-                objUsuario.fecha_alta = Convert.ToDateTime(Request.Form("fecha_alta"))
-                objUsuario.tipo_usuario = Convert.ToInt16(Request.Form("tipo_usuario"))
-                If con.agregarUsuario(objUsuario.numero_tarjeta, objUsuario.pin, objUsuario.nombres, objUsuario.apellidos, objUsuario.direccion, objUsuario.fecha_alta, objUsuario.tipo_usuario) Then
-                    Return View(objUsuario)
+                    Dim objUsuario As New Usuario()
+                    objUsuario.numero_tarjeta = Request.Form("numero_tarjeta").ToString()
+                    objUsuario.pin = Request.Form("pin").ToString()
+                    objUsuario.nombres = Request.Form("nombres")
+                    objUsuario.apellidos = Request.Form("apellidos")
+                    objUsuario.direccion = Request.Form("direccion")
+                    objUsuario.saldo = 0.0
+                    objUsuario.fecha_alta = Convert.ToDateTime(Request.Form("fecha_alta"))
+                    objUsuario.tipo_usuario = Convert.ToInt16(Request.Form("tipo_usuario"))
+                    If con.agregarUsuario(objUsuario.numero_tarjeta, objUsuario.pin, objUsuario.nombres, objUsuario.apellidos, objUsuario.direccion, objUsuario.fecha_alta, objUsuario.tipo_usuario) Then
+                        Return View(objUsuario)
+                    Else
+                        Return View("Usuario_Nuevo")
+                    End If
+
                 Else
-                    Return View("Usuario_Nuevo")
+                    Return View("Index")
                 End If
 
-            Else
-                Return View("Index")
-            End If
+            Catch ex As Exception
+                ViewData("error") = "Ha ocurrido un error"
+                Return View("Usuario_Nuevo")
+            End Try
 
         End Function
 
@@ -59,9 +66,9 @@ Namespace Controllers
 
         Function Menu() As ActionResult
             Dim mensaje As String = Nothing
-            Dim flag As String = "block"
+            Dim flag As Boolean = True
             If System.Configuration.ConfigurationManager.AppSettings("tipo_usuario").ToString() Is "1" Then
-                flag = "none"
+                flag = False
             End If
             ViewData("flag") = flag
             If System.Configuration.ConfigurationManager.AppSettings("sesion") Then
@@ -116,22 +123,29 @@ Namespace Controllers
         End Function
 
         Function CambiarNIP2() As ActionResult
-            If System.Configuration.ConfigurationManager.AppSettings("sesion") Then
-                Dim nipActual = If(Request.Form("nipActual") IsNot Nothing, Request.Form("nipActual").ToString(), "")
-                Dim nuevoNip = If(Request.Form("nuevoNip") IsNot Nothing, Request.Form("nuevoNip").ToString(), "")
-                Dim confirmar = If(Request.Form("confirmar") IsNot Nothing, Request.Form("confirmar").ToString(), "")
-                If nipActual <> "" And nuevoNip <> "" And confirmar <> "" Then
-                    Dim result = con.CambiarPIN(Convert.ToInt16(nuevoNip), Convert.ToInt16(confirmar))
-                    If result.Equals("Exito") Then
-                        Return Redirect("/Login/Menu")
-                    Else
-                        'Regresar mensaje de confirmacion
+            ViewData("error") = Nothing
+            Try
+                If System.Configuration.ConfigurationManager.AppSettings("sesion") Then
+                    Dim nipActual = If(Request.Form("nipActual") IsNot Nothing, Request.Form("nipActual").ToString(), "")
+                    Dim nuevoNip = If(Request.Form("nuevoNip") IsNot Nothing, Request.Form("nuevoNip").ToString(), "")
+                    Dim confirmar = If(Request.Form("confirmar") IsNot Nothing, Request.Form("confirmar").ToString(), "")
+                    If nipActual <> "" And nuevoNip <> "" And confirmar <> "" Then
+                        Dim result = con.CambiarPIN(Convert.ToInt16(nuevoNip), Convert.ToInt16(confirmar))
+                        If result.Equals("Exito") Then
+                            Return Redirect("/Login/Menu")
+                        Else
+                            Return View("CambiarNIP")
+                        End If
                     End If
-                End If
 
-            Else
-                Return View("Index")
-            End If
+                Else
+                    Return View("Index")
+                End If
+            Catch ex As Exception
+                ViewData("error") = "Ha ocurrido un error"
+                Return View("CambiarNIP")
+            End Try
+
         End Function
 
         Function Saldo() As ActionResult
@@ -146,22 +160,39 @@ Namespace Controllers
         End Function
 
         Function Retiro(cantidad As String) As ActionResult
-            Dim result = con.RealizarMovimiento("Retiro", Convert.ToInt32(cantidad), "Retiro")
-            If Not result.Equals("No cuenta con el saldo suficiente") Then
-                Return Redirect("/Login/Menu")
-            Else
-                'Redireccionar a ventana con mensaje de confirmacion
-                Return Redirect("/Login/RetirosAf")
+            Dim mensaje As String = Nothing
+            Try
+                Dim result = con.RealizarMovimiento("Retiro", Convert.ToInt32(cantidad), "Retiro")
+                If Not result.Equals("No cuenta con el saldo suficiente") Then
+                    mensaje = "Retiro exitoso"
+                    ViewData("mensaje") = mensaje
+                    Return View("Retiros")
+                Else
+                    mensaje = "No cuenta con el saldo suficiente"
+                    ViewData("mensaje") = mensaje
+                    'Redireccionar a ventana con mensaje de confirmacion
+                    Return View("Retiros")
 
-            End If
+                End If
+            Catch ex As Exception
+            End Try
+
         End Function
 
         Function RealizarPago() As ActionResult
             Dim mensaje As String = Nothing
-            Dim result = con.RealizarMovimiento(Request.Form("servicio"), Convert.ToInt32(Request.Form("cantidad")), "Pago")
-            mensaje = result
-            ViewData("mensaje") = mensaje
+            ViewData("error") = Nothing
+            Try
+                Dim result = con.RealizarMovimiento(Request.Form("servicio"), Convert.ToInt32(Request.Form("cantidad")), "Pago")
+                mensaje = result
+                ViewData("mensaje") = mensaje
                 Return View("Pagos")
+            Catch ex As Exception
+                mensaje = "Ha ocurrido un error"
+                ViewData("error") = mensaje
+                Return View("Pagos")
+            End Try
+
         End Function
 
     End Class

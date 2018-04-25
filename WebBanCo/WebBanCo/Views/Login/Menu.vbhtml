@@ -27,13 +27,13 @@ End Code
         <div class="row bg-faded">
             <div class="col-4 mx-auto text-center">
                 <img src="\Imagenes\bancp1.png" width="200" height="200" /> <!-- center this image within the column -->
-                <p>centered</p>
+                
             </div>
         </div>
 
     </div>
 
-    <div style="text-align:center;margin-left:150px; margin-top:100px">
+    <div style="text-align:center;margin-left:150px; margin-top:20px">
 
 
         <div style="margin-top:50px">
@@ -57,30 +57,32 @@ End Code
                 <div class="col-sm-4 ">
                     <a href="@Url.Action("CambiarNIP", "Login")"><button name="btnCambiar" class="btn btn-outline-primary btn-lg">Cambiar NIP</button></a><br />
                 </div>
-                <div class="col-sm-8">
-                    <a style="display:<%@ViewData("flag")%>" href="@Url.Action("Usuario_Nuevo", "Login")"><button name="Agregar" class="btn btn-outline-primary btn-lg">Agregar Usuarios</button></a><br />
+@If ViewData("flag") Then
+                @<div Class="col-sm-8">
+                    <a  href = "@Url.Action("Usuario_Nuevo", "Login")"><button name="Agregar" Class="btn btn-outline-primary btn-lg">Agregar Usuarios</button></a>
                 </div>
+        End If
             </div>
 
 
-            <div class="" style="margin-bottom:30px; margin-right:20px">
-                <a class="pull-right" href="@Url.Action("Index", "Login")"><button name="btnSalir" class="btn btn-outline-secondary btn-lg">Salir</button></a>
+            <div Class="" style="margin-bottom:30px; margin-right:20px">
+                <a Class="pull-right" href="@Url.Action("Index", "Login")"><button name="btnSalir" class="btn btn-outline-secondary btn-lg">Salir</button></a>
             </div>
         </div>
     </div>
 
-    <style>
+    <Style>
         .mh1 {
-            margin-top: 10%;
-            margin-bottom: 10%;
+            margin-top: 4%;
+            margin-bottom: 4%;
         }
 
         .center {
-            vertical-align: central;
+            vertical - align:    central;
         }
 
         .btn {
-            margin: 5px;
+            margin:    5px;
             width: 120px;
             height: 50px;
         }
