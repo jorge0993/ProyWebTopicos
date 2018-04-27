@@ -100,7 +100,8 @@ Namespace Controllers
 
         Function Movimientos() As ActionResult
             If System.Configuration.ConfigurationManager.AppSettings("sesion") Then
-                Return View()
+                Dim obj As New Movimientos
+                Return View(obj.MovimientosDatos)
             Else
                 Return View("Index")
             End If
