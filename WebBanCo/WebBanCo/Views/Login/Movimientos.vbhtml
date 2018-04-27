@@ -1,4 +1,6 @@
-﻿@Code
+﻿@ModelType IEnumerable(Of WebBanCo.MovimientoDatosModel)
+
+@Code
     Layout = Nothing
 End Code
 
@@ -6,6 +8,8 @@ End Code
 
 <html>
 <head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Movimientos</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- jQuery library -->
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
@@ -21,12 +25,65 @@ End Code
     <meta name="viewport" content="width=device-width" />
     <title>Movimientos</title>
 </head>
-<body class="container-fluid">
-    <div>
+<body>
+    <div class="container">
+        <div class="row bg-faded">
+            <div class="col-4 mx-auto text-center">
+                <img src="\Imagenes\bancp1.png" width="200" height="200" />
+
+            </div>
+        </div>
     </div>
-    <div class="fixed-bottom">
-        <a class="pull-right" href="@Url.Action("Index", "Login")"><button name="btnSalir">Salir</button></a>
-        <a class="pull-right" href="@Url.Action("Menu", "Login")"><button name="btnSalir">Regresar</button></a>
-    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 offset-sm-1 text-center">
+                <h3 style="margin-top: 10px; margin-bottom: 10px;">Movimientos</h3>
+                <table class="table">
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(Function(model) model.TipoMovimiento)
+                        </th>
+
+                        <th>
+                            @Html.DisplayNameFor(Function(model) model.CantidadMovimiento)
+                        </th>
+                        <th></th>
+                    </tr>
+
+                    @For Each item In Model
+                        @<tr>
+
+                            <td>
+                                @Html.DisplayFor(Function(modelItem) item.TipoMovimiento)
+                            </td>
+
+                            <td>
+                                @Html.DisplayFor(Function(modelItem) item.CantidadMovimiento)
+                            </td>
+
+                        </tr>
+                    Next
+
+                </table>
+            </div>
+         </div>
+       </div>
+            <div class="fixed-bottom">
+                <a class="pull-right" href="@Url.Action("Index", "Login")"><button name="btnSalir" class="btn btn-outline-secondary btn-lg" style="margin-bottom:15px; margin-right:20px">Salir</button></a>
+                <a class="pull-left" href="@Url.Action("Menu", "Login")"><button name="btnSalir" class="btn btn-outline-secondary btn-lg" style="margin-bottom:15px; margin-left:20px">Regresar</button></a>
+            </div>
+
+            <style>
+                .pull-left {
+                    bottom: 20px;
+                }
+
+                .btn {
+                    margin: 5px;
+                    width: 120px;
+                    height: 50px;
+                    font-size: 15px;
+                }
+            </style>
 </body>
 </html>
